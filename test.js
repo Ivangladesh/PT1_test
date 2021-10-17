@@ -31,5 +31,6 @@ botones.forEach(el => el.addEventListener('click', event => {
 let btnValidaciones = document.querySelectorAll('.btn-validar');
 
 btnValidaciones.forEach(el => el.addEventListener('click', event => {
-  valid.number(123123);
+  let response = valid.decimal("10.00", 4);
+  console.log(JSON.stringify(response));
 }));
